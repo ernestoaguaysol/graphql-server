@@ -29,3 +29,32 @@ query getCourses($courseTopic: String) {
   "courseTopic": "Java"
 }
 ```
+
+# Fragmentos (Example 2)
+```
+query getCoursesWithFragments($courseID1: Int!, $courseID2: Int!) {
+  course1: course(id: $courseID1){
+    ...courseFields
+  } 
+  course2: course(id: $courseID2){
+    ...courseFields
+  }
+  
+}
+
+fragment courseFields on Course{
+	title
+  id
+  author
+  topic
+  url
+}
+```
+
+### Variable query
+```
+{
+  "courseID1": 1,
+  "courseID2": 3
+}
+```
