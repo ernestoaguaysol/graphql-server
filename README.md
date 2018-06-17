@@ -1,3 +1,6 @@
+# run
+    > node index.js
+
 # Query frontend example
 
 ## Query graphiql
@@ -58,3 +61,20 @@ fragment courseFields on Course{
   "courseID2": 3
 }
 ```
+
+## Mutation (UPDATE)
+```
+mutation updateCourseTopic($id: Int!, $topic: String!) {
+  updateCourseTopic(id: $id, topic: $topic) {
+    ...courseFields
+  }
+}
+```
+
+### variable query
+~~~
+{
+  "id": 3,
+  "topic": "Java 8" 
+}
+~~~
