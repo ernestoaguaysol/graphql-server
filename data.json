@@ -1,0 +1,26 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "nodejs course",
+            "author": "Jonh Carter",
+            "topic": "Javascript",
+            "url": "http://ernestoaguaysol.io"
+        },
+        {
+            "id": 2,
+            "title": "Redux",
+            "author": "Jonh Carter",
+            "topic": "Javascript",
+            "url": "http://ernestoaguaysol.io"
+        },
+        {
+            "id": 3,
+            "title": "Java",
+            "author": "Jonh Carter",
+            "topic": "Java",
+            "url": "http://ernestoaguaysol.io"
+        }
+    ]
+
+}
